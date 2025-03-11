@@ -15,8 +15,8 @@ def prime_number(n):
     prime_list = []
     for i in range(2, n):
         if is_prime(i):
-            print(i)
             prime_list.append(i)
+    print(prime_list)
     return prime_list
 
 prime_number(10000)
