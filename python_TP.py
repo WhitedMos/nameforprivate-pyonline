@@ -22,6 +22,7 @@ def prime_number(n):
     return prime_list
 
 if __name__ == '__main__':
+    print("Question 1:")
     prime_number(10000)
 
 # Question 2: Afficher tous les a, b, c dans N3 <= 1000 tels que a^2 + b^2 = c^2
@@ -37,6 +38,7 @@ def pythagorean_triplet(n):
     return abc_list
 
 if __name__ == '__main__':
+    print("Question 2:")
     pythagorean_triplet(1000)
 
 # Question 3: Tous n dans N tels que u_(n+2) = (1/3)*((u_(n-1))^3 + u_n +1)
@@ -53,4 +55,24 @@ def u_n(n, u1=0, u2=1/2):
     return u_list
 
 if __name__ == '__main__':
+    print("Question 3:")
     u_n(10000)
+
+# Question 4: Tous v dans N tels que v_(n+1) = v_n /2 si v_n est pair, 3*v_n + 1 si v_n est impair
+# montre que pour v_0 = 13, il existe un p dans N tel que v_p = 1
+# 问题4：所有v在N中使得v_(n+1) = v_n /2 si v_n是偶数, 3*v_n + 1 si v_n是奇数
+# 证明对于v_0 = 13, 存在一个p在N中使得v_p = 1
+def v_n(v0=13):
+    v_list = [v0]
+    while v_list[-1] != 1:
+        if v_list[-1] % 2 == 0:
+            v = v_list[-1] / 2
+        else:
+            v = 3*v_list[-1] + 1
+        v_list.append(v)
+    print(f"C'est vrai pour v_0 = {v0}, p = {len(v_list) - 1}\n")
+    return v_list
+
+if __name__ == '__main__':
+    print("Question 4:")
+    v_n(13)
