@@ -18,7 +18,7 @@ def prime_number(n):
         if is_prime(i):
             prime_list.append(i)
         i += 1
-    print(f"Le {n}eme nombre premier: {prime_list[n - 1]}")
+    print(f"Le {n}eme nombre premier: {prime_list[n - 1]}\n")
     return prime_list
 
 if __name__ == '__main__':
@@ -33,7 +33,7 @@ def pythagorean_triplet(n):
             c = math.sqrt(a**2 + b**2)
             if c.is_integer() and c <= n:
                 abc_list.append([a, b, int(c)])
-    print(f"Tous les [a, b, c] que a^2 + b^2 = c^2 dans N^3 <= {n}: {abc_list}")
+    print(f"Tous les [a, b, c] que a^2 + b^2 = c^2 dans N^3 <= {n}: {abc_list}\n")
     return abc_list
 
 if __name__ == '__main__':
@@ -49,7 +49,7 @@ def u_n(n, u1=0, u2=1/2):
     for i in range(2, n + 1):
         u = (1/3)*((u_list[i - 2])**3 + u_list[i - 1] + 1)
         u_list.append(u)
-    print(f"u_{n} = {u_list[n]}")
+    print(f"u_{n} = {u_list[n]}\n")
     return u_list
 
 if __name__ == '__main__':
