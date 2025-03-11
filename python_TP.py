@@ -19,4 +19,5 @@ def prime_number(n):
     print(prime_list)
     return prime_list
 
-prime_number(10000)
+if __name__ == '__main__':
+    prime_number(10000)
