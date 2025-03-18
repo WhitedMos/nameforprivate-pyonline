@@ -39,8 +39,8 @@ print(min(x, y))
 print("2.1: La commande max() renvoie le plus grand nombre, min() le plus petit")
 
 print("2.2:")
-x = input("x")
-y = input("y")
+x = input("x:")
+y = input("y:")
 max_input = max(x,y)
 if max_input == x:
     print(1)
@@ -48,13 +48,13 @@ else:
     print(0)
 
 print("2.3:")
-if input("x") >= input("y"):
+if input("x:") >= input("y:"):
     print("maximal est x")
 else:
     print("maximal est y")
 
 print("2.4:")
-if input("x") >= input("y"):
+if input("x:") >= input("y:"):
     print("minimal est y")
 else:
     print("minimal est x")
