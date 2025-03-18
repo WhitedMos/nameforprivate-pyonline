@@ -70,5 +70,9 @@ table = [[True, True, xor(0, 0)],
         [False, True, xor(1, 0)],
         [False, False, xor(1, 1)]]
 
-print(f"3.1: {tabulate(table, headers, tablefmt='grid')}")
+print(f"3.1: \n{tabulate(table, headers, tablefmt='grid')}")
 
+print(f"xor(a,b):{xor(bool(input("bool a")), bool(input("bool b")))}")
+
+# Exercice 4
+print("\nExercice 4")
