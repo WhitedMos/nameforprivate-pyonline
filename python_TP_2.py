@@ -89,3 +89,8 @@ y = [range(0, 10)]
 print(y,"\t", type(y))
 print(len(y))
 print(y == z)
+print("4.3:")
+print([*range(0, input("n:"))])
+print("4.4: if we got int(float(x)), it will give us x without the decimal part")
+print("4.5:")
+print([*range(0, 10, 2)])
