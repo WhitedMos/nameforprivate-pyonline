@@ -76,6 +76,7 @@ print(f"xor(a,b):{xor(bool(input("bool a")), bool(input("bool b")))}")
 
 # Exercice 4
 print("\nExercice 4")
+print("4.1:")
 x = range(0, 10)
 y = [*range(0, 10)]
 z = [k for k in range(0, 10)]
@@ -83,6 +84,7 @@ print(x,"\t",type(x))
 print(y,"\t", type(y))
 print(z,"\t", type(z))
 print(y == z)
+print("4.2:")
 y = [range(0, 10)]
 print(y,"\t", type(y))
 print(len(y))
