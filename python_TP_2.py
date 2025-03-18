@@ -59,5 +59,12 @@ else:
 
 # Exercice 3
 print("\nExercice 3")
+form tabulate import tabulate
 def xor(a, b):
     return a != b
+headers = ["A", "B", "A xor B"]
+table = [[True, True, xor(0, 0)],
+        [True, False, xor(0, 1)],
+        [False, True, xor(1, 0)],
+        [False, False, xor(1, 1)]]
+
