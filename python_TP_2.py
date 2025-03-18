@@ -86,4 +86,4 @@ print(y == z)
 y = [range(0, 10)]
 print(y,"\t", type(y))
 print(len(y))
-print(y == z)s
+print(y == z)
